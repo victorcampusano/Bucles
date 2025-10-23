@@ -6,9 +6,24 @@ namespace Bucles
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Menu de Opciones para Programa");
-            mostrarMenu();
-            menuConWhile(); 
+            Console.WriteLine("Mostra la tabla de Multiplicar\n" +
+                "Digite el numero X para mostrar su tabla de multiplicar\n");
+            int a = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite el limite de la tabla\n");
+            int n = int.Parse(Console.ReadLine());
+
+            Varios v = new Varios();
+
+            v.tablaMultiplicar(a, n);
+
+
+            // Console.WriteLine("Menu de Opciones para Programa");
+            //mostrarMenu();
+            //menuConWhile(); 
+
+
+
             Console.ReadKey();
         }
 
